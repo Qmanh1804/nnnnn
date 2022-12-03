@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_music"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:text="Tên bài hát !"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <ImageButton
+            android:id="@+id/imageViewPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="70dp"
+            android:background="@null"
+            android:src="@drawable/icon_previous"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageViewPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="70dp"
+            android:layout_toRightOf="@+id/imageViewPrevious"
+            android:background="@null"
+            android:src="@drawable/icon_play"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageViewNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="70dp"
+            android:layout_toRightOf="@+id/imageViewPlay"
+            android:background="@null"
+            android:src="@drawable/icon_next"></ImageButton>
+
+
+        <SeekBar
+            android:id="@+id/seekBarMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:padding="20dp"></SeekBar>
+
+        <TextView
+            android:id="@+id/textViewTimesong"
+            android:text="00:00"
+            android:textSize="28sp"
+            android:textColor="#fff"
+            android:fontFamily="casual"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="160dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/textViewTimetotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="160dp"
+            android:fontFamily="casual"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="28sp"></TextView>
+
+        <ImageView
+            android:id="@+id/imageViewDisc"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="200dp"
+            app:srcCompat="@drawable/icon_disc" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
